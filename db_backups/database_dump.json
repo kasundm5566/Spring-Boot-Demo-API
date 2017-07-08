@@ -1,0 +1,6 @@
+{"_id":{"$oid":"59608102377bbff598b23116"},"userName":"sam123","firstName":"Sam","lastName":"Carter","age":25.0,"city":"Colombo"}
+{"_id":{"$oid":"59608102377bbff598b23117"},"userName":"john123","firstName":"John","lastName":"Peter","age":28.0,"city":"Galle"}
+{"_id":{"$oid":"59608102377bbff598b23118"},"userName":"maggie123","firstName":"Maggie","lastName":"Joana","age":19.0,"city":"Kandy"}
+{"_id":{"$oid":"59608102377bbff598b23119"},"userName":"anne123","firstName":"Anne","lastName":"Mariana","age":31.0,"city":"Jaffna"}
+{"_id":{"$oid":"59608102377bbff598b2311a"},"userName":"anna123","firstName":"Anna","lastName":"Samuels","age":18.0,"city":"Matara"}
+{"_id":{"$oid":"5960ca29476d4430786a7db0"},"_class":"com.kdm.domain.Student","userName":"jenny123","firstName":"Jenny","lastName":"Scarlos","age":24,"city":"Kalutara"}
