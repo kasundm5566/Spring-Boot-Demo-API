@@ -8,5 +8,6 @@ spring:
 
 # Server settings
 server:
+  port: 5000
   connection-timeout: 100
   contextPath: /api/v1
