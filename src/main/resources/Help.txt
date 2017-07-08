@@ -1,0 +1,37 @@
+> db.student.insert([
+                        {
+                          "userName": "sam123",
+                          "firstName": "Sam",
+                          "lastName": "Carter",
+                          "age": 25,
+                          "city": "Colombo"
+                        },
+                        {
+                          "userName": "john123",
+                          "firstName": "John",
+                          "lastName": "Peter",
+                          "age": 28,
+                          "city": "Galle"
+                        },
+                        {
+                          "userName": "maggie123",
+                          "firstName": "Maggie",
+                          "lastName": "Joana",
+                          "age": 19,
+                          "city": "Kandy"
+                        },
+                        {
+                          "userName": "anne123",
+                          "firstName": "Anne",
+                          "lastName": "Mariana",
+                          "age": 31,
+                          "city": "Jaffna"
+                        },
+                        {
+                          "userName": "anna123",
+                          "firstName": "Anna",
+                          "lastName": "Samuels",
+                          "age": 18,
+                          "city": "Matara"
+                        }
+ ])
