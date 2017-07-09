@@ -13,7 +13,7 @@ Simple REST API developed using Spring Boot to implement basic CRUD operations.
 It has already defined the configurations required for the MongoDB database connectivity.
 - Server starting port is 5000.
 - Server context path in `/api/v1`. That means if you want to access a particular service you need to do it as follows.
-    - <host>:<server_port>/<context_path>/<service_path>
+    - <server_host>:<server_port>/<context_path>/<service_path>
     - e.g: localhost:5000/api/v1/students/john123
 
 ### Restore database.
