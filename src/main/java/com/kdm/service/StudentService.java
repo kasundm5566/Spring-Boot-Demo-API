@@ -97,13 +97,35 @@ public class StudentService {
         SuccessMessage successMessage = new SuccessMessage();
         successMessage.setStatus("success");
         successMessage.setCode(HttpStatus.OK.value());
-        if(affecteRows>0){
+        if (affecteRows > 0) {
             successMessage.setMessage("student record updated.");
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("userName", student.getUserName());
             successMessage.addData(jsonObject);
-        }else{
+        } else {
             successMessage.setMessage("no matching records found to update.");
+        }
+        return new ResponseEntity<>(successMessage, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/{userName}", method = RequestMethod.GET, produces = {"application/json"})
+    @ResponseBody
+    public ResponseEntity<Object> searchStudent(@PathVariable("userName") String userName) {
+        Student student = studentRepoImpl.searchStudent(userName);
+        SuccessMessage successMessage = new SuccessMessage();
+        successMessage.setStatus("success");
+        successMessage.setCode(HttpStatus.OK.value());
+        if (student == null) {
+            successMessage.setMessage("no matching records found.");
+        } else {
+            successMessage.setMessage("student record found.");
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("userName", student.getUserName());
+            jsonObject.put("firstName", student.getFirstName());
+            jsonObject.put("lastName", student.getLastName());
+            jsonObject.put("age", student.getAge());
+            jsonObject.put("city", student.getCity());
+            successMessage.addData(jsonObject);
         }
         return new ResponseEntity<>(successMessage, HttpStatus.OK);
     }

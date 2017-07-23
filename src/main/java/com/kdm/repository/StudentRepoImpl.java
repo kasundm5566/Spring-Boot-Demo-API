@@ -65,4 +65,12 @@ public class StudentRepoImpl implements StudentRepo {
         WriteResult writeResult = mongoTemplate.updateMulti(query, update, Student.class, "student");
         return writeResult.getN();
     }
+
+    @Override
+    public Student searchStudent(String userName) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("userName").is(userName));
+        Student student = mongoTemplate.findOne(query, Student.class, "student");
+        return student;
+    }
 }

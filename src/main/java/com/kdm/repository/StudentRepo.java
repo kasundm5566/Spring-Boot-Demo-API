@@ -16,4 +16,6 @@ public interface StudentRepo {
     int deleteStudent(String userName);
 
     int updateStudent(Student student);
+
+    Student searchStudent(String userName);
 }

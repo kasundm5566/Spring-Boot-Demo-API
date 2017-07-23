@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @SpringBootApplication
-@ComponentScan({"com.kdm.service","com.kdm.repository","com.kdm.handler"})
+@ComponentScan({"com.kdm.service","com.kdm.repository"})
 public class SpringBootDemoApiApplication {
 
 	public static void main(String[] args) {
